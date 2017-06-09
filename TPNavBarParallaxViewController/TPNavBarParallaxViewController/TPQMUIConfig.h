@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TPQMUIConfig : NSObject
-
++ (void)setup;
 @end

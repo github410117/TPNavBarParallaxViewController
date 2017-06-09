@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Tpphha. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TPNavBarParallaxViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : TPNavBarParallaxViewController
 
 
 @end

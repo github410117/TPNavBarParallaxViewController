@@ -6,8 +6,9 @@
 //  Copyright © 2017年 Tpphha. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TPFacade : NSObject
++ (void)pushViewController:(UIViewController*)viewController animated:(BOOL)animated completion:(void (^)(void))completion;
 
 @end

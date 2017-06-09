@@ -13,9 +13,20 @@
 		F08F1AB91EE98AAD00E2F480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F08F1AB71EE98AAD00E2F480 /* Main.storyboard */; };
 		F08F1ABB1EE98AAD00E2F480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08F1ABA1EE98AAD00E2F480 /* Assets.xcassets */; };
 		F08F1ABE1EE98AAD00E2F480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F08F1ABC1EE98AAD00E2F480 /* LaunchScreen.storyboard */; };
+		F08F1AC71EE98C1800E2F480 /* TPNavBarParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1AC61EE98C1800E2F480 /* TPNavBarParallaxViewController.m */; };
+		F08F1ACA1EE98C7300E2F480 /* UIApplication+TPTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1AC91EE98C7300E2F480 /* UIApplication+TPTopViewController.m */; };
+		F08F1ACD1EE98CBD00E2F480 /* TPFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1ACC1EE98CBD00E2F480 /* TPFacade.m */; };
+		F08F1AD01EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1ACF1EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.m */; };
+		F08F1AD61EE992C700E2F480 /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1AD51EE992C700E2F480 /* UIImage+YYAdd.m */; };
+		F08F1AD91EE993D500E2F480 /* TPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1AD81EE993D500E2F480 /* TPTestViewController.m */; };
+		F08F1ADC1EE9A20A00E2F480 /* TPQMUIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F1ADB1EE9A20A00E2F480 /* TPQMUIConfig.m */; };
+		F20B4C762B9B919E087376FD /* libPods-TPNavBarParallaxViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2030E4F61D060E119F6CE9AA /* libPods-TPNavBarParallaxViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2030E4F61D060E119F6CE9AA /* libPods-TPNavBarParallaxViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TPNavBarParallaxViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4DF61BEF0D5F6758FDB9C3 /* Pods-TPNavBarParallaxViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPNavBarParallaxViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPNavBarParallaxViewController/Pods-TPNavBarParallaxViewController.release.xcconfig"; sourceTree = "<group>"; };
+		80AFB20A3A690B87B9397ECD /* Pods-TPNavBarParallaxViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPNavBarParallaxViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPNavBarParallaxViewController/Pods-TPNavBarParallaxViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		F08F1AAB1EE98AAD00E2F480 /* TPNavBarParallaxViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPNavBarParallaxViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08F1AAF1EE98AAD00E2F480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F08F1AB11EE98AAD00E2F480 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +37,20 @@
 		F08F1ABA1EE98AAD00E2F480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08F1ABD1EE98AAD00E2F480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F08F1ABF1EE98AAD00E2F480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08F1AC51EE98C1800E2F480 /* TPNavBarParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNavBarParallaxViewController.h; sourceTree = "<group>"; };
+		F08F1AC61EE98C1800E2F480 /* TPNavBarParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNavBarParallaxViewController.m; sourceTree = "<group>"; };
+		F08F1AC81EE98C7300E2F480 /* UIApplication+TPTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TPTopViewController.h"; sourceTree = "<group>"; };
+		F08F1AC91EE98C7300E2F480 /* UIApplication+TPTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TPTopViewController.m"; sourceTree = "<group>"; };
+		F08F1ACB1EE98CBD00E2F480 /* TPFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFacade.h; sourceTree = "<group>"; };
+		F08F1ACC1EE98CBD00E2F480 /* TPFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFacade.m; sourceTree = "<group>"; };
+		F08F1ACE1EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TPCustomNavBarTransition.h"; sourceTree = "<group>"; };
+		F08F1ACF1EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TPCustomNavBarTransition.m"; sourceTree = "<group>"; };
+		F08F1AD41EE992C700E2F480 /* UIImage+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YYAdd.h"; sourceTree = "<group>"; };
+		F08F1AD51EE992C700E2F480 /* UIImage+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YYAdd.m"; sourceTree = "<group>"; };
+		F08F1AD71EE993D500E2F480 /* TPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTestViewController.h; sourceTree = "<group>"; };
+		F08F1AD81EE993D500E2F480 /* TPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTestViewController.m; sourceTree = "<group>"; };
+		F08F1ADA1EE9A20A00E2F480 /* TPQMUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPQMUIConfig.h; sourceTree = "<group>"; };
+		F08F1ADB1EE9A20A00E2F480 /* TPQMUIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPQMUIConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +58,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B4C762B9B919E087376FD /* libPods-TPNavBarParallaxViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3555AE723D077C1833601D08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2030E4F61D060E119F6CE9AA /* libPods-TPNavBarParallaxViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7EA6A820DC63E034C5C532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80AFB20A3A690B87B9397ECD /* Pods-TPNavBarParallaxViewController.debug.xcconfig */,
+				5E4DF61BEF0D5F6758FDB9C3 /* Pods-TPNavBarParallaxViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F08F1AA21EE98AAD00E2F480 = {
 			isa = PBXGroup;
 			children = (
 				F08F1AAD1EE98AAD00E2F480 /* TPNavBarParallaxViewController */,
 				F08F1AAC1EE98AAD00E2F480 /* Products */,
+				7D7EA6A820DC63E034C5C532 /* Pods */,
+				3555AE723D077C1833601D08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +103,24 @@
 		F08F1AAD1EE98AAD00E2F480 /* TPNavBarParallaxViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F08F1ACB1EE98CBD00E2F480 /* TPFacade.h */,
+				F08F1ACC1EE98CBD00E2F480 /* TPFacade.m */,
+				F08F1AC81EE98C7300E2F480 /* UIApplication+TPTopViewController.h */,
+				F08F1AC91EE98C7300E2F480 /* UIApplication+TPTopViewController.m */,
+				F08F1ACE1EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.h */,
+				F08F1ACF1EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.m */,
+				F08F1AC51EE98C1800E2F480 /* TPNavBarParallaxViewController.h */,
+				F08F1AC61EE98C1800E2F480 /* TPNavBarParallaxViewController.m */,
+				F08F1AD41EE992C700E2F480 /* UIImage+YYAdd.h */,
+				F08F1AD51EE992C700E2F480 /* UIImage+YYAdd.m */,
 				F08F1AB11EE98AAD00E2F480 /* AppDelegate.h */,
 				F08F1AB21EE98AAD00E2F480 /* AppDelegate.m */,
 				F08F1AB41EE98AAD00E2F480 /* ViewController.h */,
 				F08F1AB51EE98AAD00E2F480 /* ViewController.m */,
+				F08F1AD71EE993D500E2F480 /* TPTestViewController.h */,
+				F08F1AD81EE993D500E2F480 /* TPTestViewController.m */,
+				F08F1ADA1EE9A20A00E2F480 /* TPQMUIConfig.h */,
+				F08F1ADB1EE9A20A00E2F480 /* TPQMUIConfig.m */,
 				F08F1AB71EE98AAD00E2F480 /* Main.storyboard */,
 				F08F1ABA1EE98AAD00E2F480 /* Assets.xcassets */,
 				F08F1ABC1EE98AAD00E2F480 /* LaunchScreen.storyboard */,
@@ -86,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F08F1AC21EE98AAD00E2F480 /* Build configuration list for PBXNativeTarget "TPNavBarParallaxViewController" */;
 			buildPhases = (
+				3DD44AFA320902900D1E0ECC /* [CP] Check Pods Manifest.lock */,
 				F08F1AA71EE98AAD00E2F480 /* Sources */,
 				F08F1AA81EE98AAD00E2F480 /* Frameworks */,
 				F08F1AA91EE98AAD00E2F480 /* Resources */,
+				43493208C7792531494C0DA3 /* [CP] Embed Pods Frameworks */,
+				52A3C8D4FED064420E50DA3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,14 +208,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DD44AFA320902900D1E0ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43493208C7792531494C0DA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TPNavBarParallaxViewController/Pods-TPNavBarParallaxViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A3C8D4FED064420E50DA3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TPNavBarParallaxViewController/Pods-TPNavBarParallaxViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F08F1AA71EE98AAD00E2F480 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F08F1AB61EE98AAD00E2F480 /* ViewController.m in Sources */,
+				F08F1AD61EE992C700E2F480 /* UIImage+YYAdd.m in Sources */,
+				F08F1ACD1EE98CBD00E2F480 /* TPFacade.m in Sources */,
 				F08F1AB31EE98AAD00E2F480 /* AppDelegate.m in Sources */,
+				F08F1AD01EE98DA900E2F480 /* UIViewController+TPCustomNavBarTransition.m in Sources */,
+				F08F1AC71EE98C1800E2F480 /* TPNavBarParallaxViewController.m in Sources */,
+				F08F1ACA1EE98C7300E2F480 /* UIApplication+TPTopViewController.m in Sources */,
 				F08F1AB01EE98AAD00E2F480 /* main.m in Sources */,
+				F08F1AD91EE993D500E2F480 /* TPTestViewController.m in Sources */,
+				F08F1ADC1EE9A20A00E2F480 /* TPQMUIConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +390,7 @@
 		};
 		F08F1AC31EE98AAD00E2F480 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80AFB20A3A690B87B9397ECD /* Pods-TPNavBarParallaxViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N9D9Y52FAG;
@@ -285,6 +403,7 @@
 		};
 		F08F1AC41EE98AAD00E2F480 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4DF61BEF0D5F6758FDB9C3 /* Pods-TPNavBarParallaxViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N9D9Y52FAG;
@@ -314,6 +433,7 @@
 				F08F1AC41EE98AAD00E2F480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

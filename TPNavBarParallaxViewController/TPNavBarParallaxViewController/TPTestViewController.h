@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Tpphha. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "TPNavBarParallaxViewController.h"
 
-@interface TPTestViewController : NSObject
-
+@interface TPTestViewController : TPNavBarParallaxViewController
+@property (nonatomic, assign) BOOL isBlurStyle;
 @end

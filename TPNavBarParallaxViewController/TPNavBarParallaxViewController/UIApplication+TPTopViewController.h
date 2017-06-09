@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIApplication (TPTopViewController)
-
+- (UIViewController *)topViewController;
 @end

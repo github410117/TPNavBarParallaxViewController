@@ -1,26 +1,108 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vvH-vR-hNN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="QxE-7B-yTj">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <navigationController id="vvH-vR-hNN" customClass="QMUINavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F7C-cb-f9U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NiF-r5-ugV" kind="relationship" relationship="rootViewController" id="xVE-Mz-7L1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoB-BZ-uOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924" y="166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F8g-hu-20c">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="NiF-r5-ugV" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Uxo-Sd-zXe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mcx-Ez-mA1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Ouu-Lq-2Us">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-Bf-0Kc">
+                                <rect key="frame" x="166" y="0.0" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="K3j-ce-6UB">
+                                <rect key="frame" x="98.5" y="228.5" width="178" height="211"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Ee-TT-AlB">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-dC-8PP">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJU-13-9vw">
+                                                <rect key="frame" x="129" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="swichterValueChanged:" destination="NiF-r5-ugV" eventType="valueChanged" id="Eid-Yz-nAr"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOs-yV-Q5x" customClass="QMUIButton">
+                                        <rect key="frame" x="41.5" y="61" width="95" height="30"/>
+                                        <state key="normal" title="Next Origin →"/>
+                                        <connections>
+                                            <action selector="nextOrigin:" destination="NiF-r5-ugV" eventType="touchUpInside" id="dzj-NS-aDJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45M-FL-LjP" customClass="QMUIButton">
+                                        <rect key="frame" x="9" y="121" width="160" height="30"/>
+                                        <state key="normal" title="Next Parallax Normal →"/>
+                                        <connections>
+                                            <action selector="nextParallaxNormal:" destination="NiF-r5-ugV" eventType="touchUpInside" id="cmL-eC-Jce"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-x8-Qiu" customClass="QMUIButton">
+                                        <rect key="frame" x="20" y="181" width="138" height="30"/>
+                                        <state key="normal" title="Next Parallax Blur →"/>
+                                        <connections>
+                                            <action selector="nextPrallaxBlur:" destination="NiF-r5-ugV" eventType="touchUpInside" id="YoR-MG-aFw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PWI-Bf-0Kc" firstAttribute="centerX" secondItem="Ouu-Lq-2Us" secondAttribute="centerX" id="EKX-mu-sCc"/>
+                            <constraint firstItem="PWI-Bf-0Kc" firstAttribute="top" secondItem="Ouu-Lq-2Us" secondAttribute="top" id="ORe-qB-P0t"/>
+                            <constraint firstItem="K3j-ce-6UB" firstAttribute="centerY" secondItem="Ouu-Lq-2Us" secondAttribute="centerY" id="qtY-m4-1Vu"/>
+                            <constraint firstItem="K3j-ce-6UB" firstAttribute="centerX" secondItem="Ouu-Lq-2Us" secondAttribute="centerX" id="v8Y-a4-gzk"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KOr-Vw-JmU"/>
+                    <connections>
+                        <outlet property="switcher" destination="dJU-13-9vw" id="uPl-bl-875"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIl-V7-DwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1" y="153"/>
         </scene>
     </scenes>
 </document>

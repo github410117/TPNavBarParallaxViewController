@@ -7,7 +7,20 @@
 //
 
 #import <QMUIKit/QMUIKit.h>
+#import "UIViewController+TPCustomNavBarTransition.h"
 
-@interface TPNavBarParallaxViewController : QMUICommonViewController
+@protocol TPNavBarParallaxProtocol
+@optional
+- (CGFloat)navigationBarParallaxProgress;
+- (UIView *)navigationBarParallaxTargetView;
+@end
 
+@interface TPNavBarParallaxViewController : QMUICommonViewController <TPNavBarParallaxProtocol>
+@property(nonatomic, assign) BOOL customNavBarTransition;
+@property (nonatomic, strong) UIImage *navBarBackgroundImage;
+@property (nonatomic, strong) UIImage *navBarShadowImage;
+
+- (void)updateNavigationBarByParallaxProgress;
+
+- (void)setNeedsUpdateNavigationBarParallaxBlur;
 @end

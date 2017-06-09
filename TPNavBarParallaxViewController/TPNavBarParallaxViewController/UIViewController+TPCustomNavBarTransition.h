@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, TPNavigationBarStyle) {
+    TPNavigationBarStyleOrigin = 1,
+    TPNavigationBarStyleParallax,
+    // customs something
+};
+
+
+
 @interface UIViewController (TPCustomNavBarTransition)
+@property (nonatomic) TPNavigationBarStyle barStyle;
+@property (nonatomic) TPNavigationBarStyle previousBarStyle;
+@property (nonatomic) TPNavigationBarStyle nextBarStyle;
 
 @end
