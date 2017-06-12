@@ -31,6 +31,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.titleView.titleLabel.textColor = [self navigationBarTintColor];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -108,7 +113,7 @@
             UIImage *navBarBgImg = self.navBarBackgroundImage ? : QMUICMI.navBarBackgroundImage;
             img = [navBarBgImg resizableImageWithCapInsets:UIEdgeInsetsMake(1, 1, 1, 1)];
             
-//            img = [img qmui_imageWithAlpha:progress];
+            img = [img qmui_imageWithAlpha:progress];
         }
         
         return img;
