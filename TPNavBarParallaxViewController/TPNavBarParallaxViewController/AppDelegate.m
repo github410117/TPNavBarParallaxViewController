@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "TPQMUIConfig.h"
+#import <QMUIKit.h>
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+    QMUINavigationController *nav = [[QMUINavigationController alloc] initWithRootViewController:vc];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    window.rootViewController = nav;
+    [window makeKeyAndVisible];
+    self.window = window;
     [TPQMUIConfig setup];
     return YES;
 }

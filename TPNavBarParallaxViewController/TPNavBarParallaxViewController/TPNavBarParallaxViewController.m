@@ -108,7 +108,7 @@
             UIImage *navBarBgImg = self.navBarBackgroundImage ? : QMUICMI.navBarBackgroundImage;
             img = [navBarBgImg resizableImageWithCapInsets:UIEdgeInsetsMake(1, 1, 1, 1)];
             
-            img = [img qmui_imageWithAlpha:progress];
+//            img = [img qmui_imageWithAlpha:progress];
         }
         
         return img;
